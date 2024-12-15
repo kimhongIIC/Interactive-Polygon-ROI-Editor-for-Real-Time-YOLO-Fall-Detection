@@ -12,8 +12,8 @@ This approach is particularly useful for tasks like fall detection in a specific
 ## How It Works
 
 1. **Loading the Model and Video Stream:**
-   - **RTSP Camera:** Set `IP_CAM` to your camera’s RTSP URL.
-   - **Local Webcam:** Set `IP_CAM` to `0` (or another integer) to use your default webcam.
+   - **RTSP Camera:** Set `CAM` to your camera’s RTSP URL.
+   - **Local Webcam:** Set `CAM` to `0` (or another integer) to use your default webcam.
 
 2. **Polygonal ROI Definition:**
    A polygon (`polygon_zone`) defines a region of interest on the video feed. Detected objects inside this region can be treated differently than those outside.
@@ -41,14 +41,14 @@ This approach is particularly useful for tasks like fall detection in a specific
 ## Usage
 
 1. Clone this repository 
-2. Update the `IP_CAM` variable in `run.py`:
+2. Update the `CAM` variable in `run.py`:
    - Use your RTSP URL for an IP camera, e.g.:  
      ```python
-     IP_CAM = "rtsp://username:password@your_camera_ip:port/path"
+     CAM = "rtsp://username:password@your_camera_ip:port/path"
      ```
    - Use an integer (e.g., `0`) for your local webcam:  
      ```python
-     IP_CAM = 0
+     CAM = 0
      ```
 3. Run the code:
    ```bash
