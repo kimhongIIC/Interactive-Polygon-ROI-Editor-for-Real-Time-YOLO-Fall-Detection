@@ -52,7 +52,7 @@ This approach is particularly useful for tasks like fall detection in a specific
      ```
 3. Run the code:
    ```bash
-   python main.py
+   python run.py
 
 4. A window will appear showing the live video with the polygon drawn.
 5. Click and drag the polygon vertices to adjust the ROI in real-time.
